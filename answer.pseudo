@@ -3,11 +3,11 @@
 using namespace std;
 
 //function which takes name as parameter
-string printR(string s){
+string printR(string name){
 	
 	//to_string for converting random number of int form to string
 	//(rand()%10+6) will generate random number from 6 to 15
-	string ans=s+to_string((rand()%10+6));
+	string ans=name+to_string((rand()%10+6));
 	
 	//return the combination of name and the random number
 	return ans;
