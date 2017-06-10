@@ -1,0 +1,28 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+//function which takes name as parameter
+string printR(string s){
+	
+	//to_string for converting random number of int form to string
+	//(rand()%10+6) will generate random number from 6 to 15
+	string ans=s+to_string((rand()%10+6));
+	
+	//return the combination of name and the random number
+	return ans;
+	}
+	
+int main() {
+	
+	string s;
+	//user input (name here)
+	cin>>s;
+	
+	//save the returned result into 'ans' string
+	string ans=printR(s);
+	
+	//print ans
+	cout<<ans<<"\n";
+	return 0;
+}
